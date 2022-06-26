@@ -175,6 +175,8 @@ const IndexPage = () => {
       <p style={paragraphStyles}>Setelah sukses dengan Angkatan pertama, kami sedang membuka Bootcamp Cohort ke-2 yang akan hadir di bulan Juli 2022 yang mana akan menghasilkan 20 orang lebih profesional Web3.</p>
       <p style={paragraphStyles}>Segera mendaftar <a href="https://remoteskills.academy/live-programs/smart-contract-development/">di sini</a> 🔥.</p>
 
+      <p>Join our <a href="https://discord.gg/TEAJHURh2e">Discord now!🔥🔥🔥</a></p>
+
     </main>
   )
 }
