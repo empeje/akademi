@@ -1,3 +1,13 @@
-node_modules/
-.cache/
-public
+# Exclude IDE files
+# Although I like IDEA, I need to exclude this from repo to make the development style inclusive
+.idea
+
+# Ignore Gradle project-specific cache directory
+.gradle
+gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore node coming from Gradle Node plugin
+node
