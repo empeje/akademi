@@ -19,7 +19,12 @@ repositories {
     maven { url 'https://repo.spring.io/milestone' }
 }
 
-
+sourceSets {
+    main.java.srcDirs = ['apiserver/main/java']
+    main.resources.srcDirs = ['apiserver/nmain/resources']
+    test.java.srcDirs = ['apiserver/test/java']
+    test.resources.srcDirs = ['apiserver/test/resources']
+}
 
 subprojects {
     ext.nodeInstallDirectory = file("${rootProject.projectDir}/node")
