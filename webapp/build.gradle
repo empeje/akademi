@@ -10,9 +10,17 @@ frontend {
     checkScript = 'run check'
 }
 
-task runWebDev {
-    exec {
-        executable 'sh'
-        args '-c', 'npm run develop'
+task runWebDev(type: Exec) {
+    workingDir "$projectDir"
+    commandLine 'bash', '-c', 'echo Running web dev...'
+    doLast {
+        exec {
+            workingDir "$projectDir"
+            if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+                commandLine 'cmd', '/c', 'npm run develop'
+            } else {
+                commandLine 'bash', '-c', 'npm run develop'
+            }
+        }
     }
 }
